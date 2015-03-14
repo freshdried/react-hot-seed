@@ -14,7 +14,7 @@ Tired of copy-pasting, git submoduling, symlinking, or making local git packages
 
 This webpack boilerplate includes a basic `webpack.config.js` that is set up for a palette directory declared via environmental variable. It also works out the kinks of using [react-hot-loader](https://github.com/gaearon/react-hot-loader/react-hot-loader) with the palette directory.
 
-*Easy modularization = fast development = happy dev!*
+*Easy modularization + react-hot-loader = fast development + instant gratification = happy dev!*
 
 <br><br>
 ## <a name="palette"></a> *Palette?*
