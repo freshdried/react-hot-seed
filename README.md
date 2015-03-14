@@ -1,12 +1,13 @@
 # webpack-palette-react-hot-boilerplate
-<br>
 <p align="center">A basic webpack template for react projects, with the amazing <a href="https://github.com/gaearon/react-hot-loader/react-hot-loader">react-hot-loader</a></p>
+
+<p align="center">Includes a production mode and a development mode, switchable via environmental variable</p>
 
 <p align="center">Uses a <a href="#palette"><b>Palette</b></a> directory: a simple way to reuse assets across projects à la webpack's <a href="http://webpack.github.io/docs/configuration.html#resolve-fallback"> resolve.fallback</a></p>
 
 <br>
 
-Want to reuse some small assets across your projects? Just simply place those assets in one "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
+Want to reuse a custom stylesheet, or a react component across your projects? Just simply place those assets in a "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
 
 
 
@@ -85,7 +86,17 @@ $
 ## Additional features
 - loaders for sass, css, html, markdown, json, image files, audio files, font files
 - support for jsx, es6, via [babel](https://babeljs.io/)
-- production mode (minification) and development mode (hot loading); change by changing `$NODE_ENV`
+- production mode (minification) and development mode (hot-loading); switchable via `$NODE_ENV` from `production` to `development`, and vice-versa
+```
+//How to switch modes
+
+$ export NODE_ENV=production
+$ npm start
+...
+$ export NODE_ENV=development
+$ npm start
+...
+```
 
 <br><br>
 <br><br><br><br>
@@ -94,7 +105,7 @@ $
 ## Other solutions for reusing assets across projects
 ### bower
 
-Made something you want to share that other people can/would/should use? [Bower](http://bower.io) was created for sharing useful code for frontend development. [Bower works great with webpack](http://webpack.github.io/docs/usage-with-bower.html)!
+Made something you want to share that other people can use? [Bower](http://bower.io) was created for sharing useful code for frontend development. [Bower works great with webpack](http://webpack.github.io/docs/usage-with-bower.html)!
 
 If you've made something publicly useful, stable, and non-opinionated, by all means you should publish it!
 
@@ -104,6 +115,6 @@ But hey, a Palette directory means you can have (publically) useless, breaking, 
 ### local git packages with bower
 Instead of publishing your modules to the internet, you can house them in [local git packages with bower](http://stackoverflow.com/questions/13114781/bower-registering-local-git-package), and `require` them as needed.
 
-*But, lets be real, are you really going to make a git repo to reuse a couple lines of css? Or an image/logo you use on multiple sites?*
+*But, lets be real, are you really going to make a whole git repo to reuse a couple lines of css? Or a git repo for an image/logo you use on multiple sites?*
 
 With local git packages, you can be ensure reproducibility, specify version numbers, among many other good practices. However, using a Palette directory is more convenient; it eliminates almost all overhead to modularize and share a codebase. For smaller, less "mission-critical" projects with very few developers, the added convenience from a Palette directory may be worth giving up that extra layer of control.
