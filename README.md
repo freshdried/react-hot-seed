@@ -2,19 +2,23 @@
 <br>
 <p align="center">A basic webpack template for react projects, with the amazing <a href="https://github.com/gaearon/react-hot-loader/react-hot-loader">react-hot-loader</a></p>
 
-<p align="center">Based off of <a href="https://github.com/gaearon/react-hot-boilerplate">react-hot-boilerplate</a></p>
+<p align="center">Based on <a href="https://github.com/gaearon/react-hot-boilerplate">react-hot-boilerplate</a></p>
 
 <p align="center">Uses a <a href="#palette"><b>Palette</b></a> directory: a simple way to reuse assets across projects à la webpack's <a href="http://webpack.github.io/docs/configuration.html#resolve-fallback"> resolve.fallback</a></p>
 
 <br>
 
-Tired of copy-pasting, git submoduling, symlinking, or making local git packages just to reuse a couple of assets across personal projects? Just simply place your shared assets in one "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  Easy modularization = fast development = happy dev! 
+Tired of copy-pasting, git submoduling, symlinking, or making local git packages just to reuse a couple of assets across personal projects? Just simply place your shared assets in one "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
+
+
 
 This webpack boilerplate includes a basic `webpack.config.js` that is set up for a palette directory declared via environmental variable. It also works out the kinks of using [react-hot-loader](https://github.com/gaearon/react-hot-loader/react-hot-loader) with the palette directory.
 
+> Easy modularization = fast development = happy dev! 
+
 <br><br>
 ## <a name="palette"></a> *Palette?*
-A Palette directory is simply a directory specified for webpack's [resolve.fallback](http://webpack.github.io/docs/configuration.html#resolve-fallback) feature. In other words, webpack will look into `$PALETTE_DIR` for modules if it doesn't find it in your project's root. This way, you can share your own custom css, html, react components, etc. across projects. 
+A Palette directory is simply a directory specified for webpack's [resolve.fallback](http://webpack.github.io/docs/configuration.html#resolve-fallback) feature. In other words, webpack will search `$PALETTE_DIR` for a module if it doesn't find it in your project's root. This way, you can share your own custom css, html, react components, etc. across your own projects. 
 
 
 <br>
@@ -23,9 +27,9 @@ A Palette directory is simply a directory specified for webpack's [resolve.fallb
 **1** -  Create a Palette directory. This directory will house the assets that you'll want to share across different projects. It is your *palette* of assets.
 
 ```
-$ mkdir $HOME/my_modules/
-
 //You can put this anywhere and name it anything you want.
+
+$ mkdir $HOME/my_modules/
 ```
 
 **2** -  Add a line to your `.bashrc` or `.zshrc` to export the `$PALETTE_DIR` environmental variable.
@@ -35,12 +39,15 @@ $ echo "export PALETTE_DIR=$HOME/my_modules/" >> ~/.zshrc
 
 **3** -  Spawn a new shell. Happy development!
 
-</br></br></br></br>
+<br>
+<br>
+<br>
 
 ## Simplified demonstration
 
 ```
 //In project root directory
+
 $ ls app/
 App.jsx  entry.js
 
@@ -68,6 +75,7 @@ import CoolButton from "CoolButton"
 
 ```
 //Back in project's root directory
+
 $ webpack
 ...
 $
@@ -79,6 +87,10 @@ $
 ## Additional features
 - loaders for sass, css, html, markdown, and json
 - support for jsx, es6, via [babel](https://babeljs.io/)
+
+<br><br>
+<br><br><br><br>
+
 
 ## Other solutions for reusing assets across projects
 ### bower
