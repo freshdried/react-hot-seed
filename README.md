@@ -1,4 +1,4 @@
-# webpack-palette-react-hot-boilerplate
+# webpack-palette-react-hot
 <p align="center">A basic webpack template with <a href="https://github.com/gaearon/react-hot-loader/">react-hot-loader</a></p>
 
 <p align="center">Includes a production mode and a development mode, switchable via environmental variable</p>
@@ -28,12 +28,12 @@ A Palette directory is simply a directory specified for webpack's [resolve.fallb
 ```
 //You can put this anywhere and name it anything you want.
 
-$ mkdir $HOME/my_modules/
+$ mkdir $HOME/webpack/
 ```
 
 **2** -  Add a line to your `.bashrc` or `.zshrc` to export the `$PALETTE_DIR` environmental variable.
 ```
-$ echo "export PALETTE_DIR=$HOME/my_modules/" >> ~/.zshrc
+$ echo "export PALETTE_DIR=$HOME/webpack/" >> ~/.zshrc
 ```
 
 **3** -  Spawn a new shell. To use the boilerplate, just `npm install`. Switch dev environments with `export NODE_ENV=production` and `export NODE_ENV=development`
@@ -51,15 +51,15 @@ $ ls app/
 App.jsx  entry.js
 
 $ echo $PALETTE_DIR
-/home/slee2/my_modules
+/home/slee2/webpack
 
-$ ls ~/my_modules/
+$ ls ~/webpack/
 nice_style/ cool_button
 
-$ ls ~/my_modules/nice_style/
+$ ls ~/webpack/nice_style/
 style.css
 
-$ ls ~/my_modules/CoolButton/
+$ ls ~/webpack/CoolButton/
 index.jsx
 ```
 ```javascript

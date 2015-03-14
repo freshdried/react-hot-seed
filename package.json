@@ -1,4 +1,31 @@
 {
+  "name": "webpack-palette-react-hot",
+  "description": "A basic webpack template with react-hot-loader",
+  "version": "1.0.1",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freshdried/webpack-palette-react-hot-boilerplate"
+  },
+  "keywords": [
+    "webpack",
+    "palette",
+    "react",
+    "hot",
+    "reactjs",
+    "reload",
+    "live",
+    "hmr",
+    "boilerplate",
+    "starter",
+    "template"
+  ],
+  "author": "Sean Lee <freshdried@gmail.com> (http://sean.lee.mx/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freshdried/webpack-palette-react-hot/issues"
+  },
+  "homepage": "https://github.com/freshdried/webpack-palette-react-hot",
   "scripts": {
     "start": "node server.js"
   },
@@ -18,30 +45,5 @@
     "object-assign": "^2.0.0",
     "react": "^0.13.0",
     "style-loader": "^0.8.3"
-  },
-  "name": "webpack-palette-react-hot-boilerplate",
-  "description": "A basic webpack template with react-hot-loader",
-  "version": "1.0.1",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/freshdried/webpack-palette-react-hot-boilerplate"
-  },
-  "keywords": [
-    "webpack",
-    "palette",
-    "react",
-    "hot",
-    "reactjs",
-    "reload",
-    "live",
-    "hmr",
-    "boilerplate"
-  ],
-  "author": "Sean Lee <freshdried@gmail.com> (http://sean.lee.mx/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/freshdried/webpack-palette-react-hot-boilerplate/issues"
-  },
-  "homepage": "https://github.com/freshdried/webpack-palette-react-hot-boilerplate"
+  }
 }
