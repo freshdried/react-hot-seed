@@ -87,6 +87,7 @@ $
 - loaders for sass, css, html, markdown, json, image files, audio files, font files
 - support for jsx, es6, via [babel](https://babeljs.io/)
 - production mode (minification) and development mode (hot-loading); switchable via `$NODE_ENV`
+- Don't want to use a palette? Don't declare `$PALETTE_DIR`.
 
 <br><br>
 <br><br><br><br>
