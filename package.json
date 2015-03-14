@@ -2,7 +2,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^4.7.8",
     "babel-loader": "^4.1.0",
     "css-loader": "^0.9.1",
@@ -14,9 +14,7 @@
     "sass-loader": "^0.4.2",
     "url-loader": "^0.5.5",
     "webpack": "^1.7.3",
-    "webpack-dev-server": "^1.7.0"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^1.7.0",
     "object-assign": "^2.0.0",
     "react": "^0.13.0",
     "style-loader": "^0.8.3"
