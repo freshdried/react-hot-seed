@@ -1,5 +1,5 @@
 # webpack-palette-react-hot-boilerplate
-<p align="center">A basic webpack template for react projects, with the amazing <a href="https://github.com/gaearon/react-hot-loader/react-hot-loader">react-hot-loader</a></p>
+<p align="center">A basic webpack template with <a href="https://github.com/gaearon/react-hot-loader/">react-hot-loader</a></p>
 
 <p align="center">Includes a production mode and a development mode, switchable via environmental variable</p>
 
@@ -7,11 +7,11 @@
 
 <br>
 
-Want to reuse a custom stylesheet, or a react component across your projects? Just simply place those assets in a "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
+Share assets across projects by placing them in a "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
 
 
 
-This webpack boilerplate includes a basic `webpack.config.js` that is set up for a palette directory declared via environmental variable. 
+This webpack boilerplate includes a basic `webpack.config.js` that is set up to use Palette directory declared via environmental variable. 
 
 *Easy modularization + react-hot-loader = fast development + instant gratification = happy dev!*
 
@@ -36,7 +36,7 @@ $ mkdir $HOME/my_modules/
 $ echo "export PALETTE_DIR=$HOME/my_modules/" >> ~/.zshrc
 ```
 
-**3** -  Spawn a new shell. Happy development! To use the boilerplate, just `npm install`.
+**3** -  Spawn a new shell. To use the boilerplate, just `npm install`. Switch dev environments with `export NODE_ENV=production` and `export NODE_ENV=development`
 
 <br>
 <br>
@@ -78,7 +78,7 @@ import CoolButton from "CoolButton"
 $ webpack
 ...
 $
-//It works, trust me!
+//It works!
 //  Webpack cannot find nice_style/style.css in its root directory,
 //  so it falls back to $PALETTE_DIR, finds nice_style/style.css,
 //  and loads the module. The same goes for CoolButton.
@@ -86,17 +86,8 @@ $
 ## Additional features
 - loaders for sass, css, html, markdown, json, image files, audio files, font files
 - support for jsx, es6, via [babel](https://babeljs.io/)
-- production mode (minification) and development mode (hot-loading); switchable via `$NODE_ENV` from `production` to `development`, and vice-versa
-```
-//How to switch modes
-
-$ export NODE_ENV=production
-$ npm start
-...
-$ export NODE_ENV=development
-$ npm start
-...
-```
+- production mode (minification) and development mode (hot-loading); switchable via `$NODE_ENV`
+- Don't want to use a palette? Don't declare `$PALETTE_DIR`.
 
 <br><br>
 <br><br><br><br>
