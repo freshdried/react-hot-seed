@@ -1,5 +1,5 @@
 # webpack-palette-react-hot-boilerplate
-<p align="center">A basic webpack template with <a href="https://github.com/gaearon/react-hot-loader/react-hot-loader">react-hot-loading</a></p>
+<p align="center">A basic webpack template with <a href="https://github.com/gaearon/react-hot-loader/">react-hot-loader</a></p>
 
 <p align="center">Includes a production mode and a development mode, switchable via environmental variable</p>
 
