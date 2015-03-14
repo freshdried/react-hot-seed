@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "object-assign": "^2.0.0",
-    "react": "^0.13.0"
+    "react": "^0.13.0",
+    "style-loader": "^0.8.3"
   },
   "name": "webpack-palette-react-hot-boilerplate",
   "description": "<br> <p align=\"center\">A basic webpack template for react projects, with the amazing <a href=\"https://github.com/gaearon/react-hot-loader/react-hot-loader\">react-hot-loader</a></p>",
