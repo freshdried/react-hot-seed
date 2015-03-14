@@ -5,7 +5,7 @@ var config = require("./webpack.config");
 var server = new WebpackDevServer(webpack(config), {
     contentBase: __dirname + "/dist/",
     publicPath: config.output.publicPath,
-    hot: true,
+    hot: (process.env.NODE_ENV !== "production"),
     historyApiFallback: true
 });
 

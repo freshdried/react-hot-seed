@@ -2,17 +2,15 @@
 <br>
 <p align="center">A basic webpack template for react projects, with the amazing <a href="https://github.com/gaearon/react-hot-loader/react-hot-loader">react-hot-loader</a></p>
 
-<p align="center">Based on <a href="https://github.com/gaearon/react-hot-boilerplate">react-hot-boilerplate</a></p>
-
 <p align="center">Uses a <a href="#palette"><b>Palette</b></a> directory: a simple way to reuse assets across projects à la webpack's <a href="http://webpack.github.io/docs/configuration.html#resolve-fallback"> resolve.fallback</a></p>
 
 <br>
 
-Tired of copy-pasting, git submoduling, symlinking, or making local git packages just to reuse a couple of assets across personal projects? Just simply place your shared assets in one "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
+Want to reuse some small assets across your projects? Just simply place those assets in one "palette" directory and specify that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.  
 
 
 
-This webpack boilerplate includes a basic `webpack.config.js` that is set up for a palette directory declared via environmental variable. It also works out the kinks of using [react-hot-loader](https://github.com/gaearon/react-hot-loader/react-hot-loader) with the palette directory.
+This webpack boilerplate includes a basic `webpack.config.js` that is set up for a palette directory declared via environmental variable. 
 
 *Easy modularization + react-hot-loader = fast development + instant gratification = happy dev!*
 
@@ -85,8 +83,9 @@ $
 //  and loads the module. The same goes for CoolButton.
 ```
 ## Additional features
-- loaders for sass, css, html, markdown, and json
+- loaders for sass, css, html, markdown, json, image files, audio files, font files
 - support for jsx, es6, via [babel](https://babeljs.io/)
+- production mode (minification) and development mode (hot loading); change by changing `$NODE_ENV`
 
 <br><br>
 <br><br><br><br>
@@ -108,6 +107,3 @@ Instead of publishing your modules to the internet, you can house them in [local
 *But, lets be real, are you really going to make a git repo to reuse a couple lines of css? Or an image/logo you use on multiple sites?*
 
 With local git packages, you can be ensure reproducibility, specify version numbers, among many other good practices. However, using a Palette directory is more convenient; it eliminates almost all overhead to modularize and share a codebase. For smaller, less "mission-critical" projects with very few developers, the added convenience from a Palette directory may be worth giving up that extra layer of control.
-
-
-
