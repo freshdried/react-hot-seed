@@ -36,7 +36,7 @@ $ mkdir $HOME/my_modules/
 $ echo "export PALETTE_DIR=$HOME/my_modules/" >> ~/.zshrc
 ```
 
-**3** -  Spawn a new shell. Happy development! To use the boilerplate, just `npm install --dev`.
+**3** -  Spawn a new shell. Happy development! To use the boilerplate, just `npm install`.
 
 <br>
 <br>
