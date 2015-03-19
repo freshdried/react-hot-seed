@@ -53,22 +53,24 @@ App.jsx  entry.js
 $ echo $PALETTE_DIR
 /home/slee2/webpack
 
-$ ls ~/webpack/
-nice_style/ cool_button
+$ tree /home/slee2/webpack
+/home/slee2/webpack
+├── CoolButton
+│   └── index.jsx
+├── monospace.css
+└── nice_style
+    └── style.scss
 
-$ ls ~/webpack/nice_style/
-style.css
-
-$ ls ~/webpack/CoolButton/
-index.jsx
 ```
 ```javascript
 // example entry.js
+// this is es6
 import React from "react"
 import App from "./App.jsx"
 
 import nice_style from "nice_style/style.scss"
 import CoolButton from "CoolButton"
+import monospace from "monospace.css"
 ...
 ```
 
