@@ -49,7 +49,7 @@ var config = {
 
 if (is_production) {
     objectAssign(config, {
-        entry: "./app/entry.js",
+        entry: "./app/app.js",
         plugins: [
             new webpack.optimize.UglifyJsPlugin({
                 compress: {
@@ -67,7 +67,7 @@ if (is_production) {
         entry: [
             "webpack-dev-server/client?http://localhost:8080",
             "webpack/hot/only-dev-server",
-            "./app/entry.js"
+            "./app/app.js"
         ],
         plugins: [
             new webpack.HotModuleReplacementPlugin(),

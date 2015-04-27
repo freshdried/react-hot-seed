@@ -78,7 +78,7 @@ import CoolButton from "CoolButton"
 $ webpack
 ...
 $
-//It works!
+//It works, I promise.
 //  Webpack cannot find nice_style/style.css in its root directory,
 //  so it falls back to $PALETTE_DIR, finds nice_style/style.css,
 //  and loads the module. The same goes for CoolButton.
@@ -88,24 +88,3 @@ $
 - support for jsx, es6, via [babel](https://babeljs.io/)
 - production mode (minification) and development mode (hot-loading); switchable via `$NODE_ENV`
 - Don't want to use a palette? Don't declare `$PALETTE_DIR`.
-
-<br><br>
-<br><br><br><br>
-
-
-## Other solutions for reusing assets across projects
-### bower
-
-Made something you want to share that other people can use? [Bower](http://bower.io) was created for sharing useful code for frontend development. [Bower works great with webpack](http://webpack.github.io/docs/usage-with-bower.html)!
-
-If you've made something publicly useful, stable, and non-opinionated, by all means you should publish it!
-
-But hey, a Palette directory means you can have (publically) useless, breaking, and opinionated code! And you can surely use bower side-by-side with a Palette directory. Publish what you want published, keep private what you want to keep private.
-
-
-### local git packages with bower
-Instead of publishing your modules to the internet, you can house them in [local git packages with bower](http://stackoverflow.com/questions/13114781/bower-registering-local-git-package), and `require` them as needed.
-
-*But, lets be real, are you really going to make a whole git repo to reuse a couple lines of css? Or a git repo for an image/logo you use on multiple sites?*
-
-With local git packages, you can be ensure reproducibility, specify version numbers, among many other good practices. However, using a Palette directory is more convenient; it eliminates almost all overhead to modularize and share a codebase. For smaller, less "mission-critical" projects with very few developers, the added convenience from a Palette directory may be worth giving up that extra layer of control.
