@@ -43,7 +43,7 @@ $ echo "export PALETTE_DIR=$HOME/webpack/" >> ~/.zshrc
 <br>
 <br>
 
-## Simplified demonstration
+### Simplified demonstration
 
 ```
 //In project root directory
