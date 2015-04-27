@@ -22,7 +22,7 @@ Share assets across projects by placing them in a "palette" directory and specif
 A Palette directory is simply a directory specified for webpack's [resolve.fallback](http://webpack.github.io/docs/configuration.html#resolve-fallback) feature. In other words, webpack will search `$PALETTE_DIR` for a module if it doesn't find it in your project's root. This way, you can share your own custom css, html, react components, etc. across your own projects. 
 
 
-## Palette installation
+### Palette installation
 
 **1** -  Create a Palette directory. This directory will house the assets that you'll want to share across different projects. It is your *palette* of assets.
 
