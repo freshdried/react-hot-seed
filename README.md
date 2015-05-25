@@ -1,8 +1,9 @@
 # webpack-react-hot-seed
 React webpack project seed with <a href="https://github.com/gaearon/react-hot-loader/">react-hot-loader</a>
 
-Switchable production/development modes via `$NODE_ENV
-
+Switchable production/development modes via `$NODE_ENV`
+<br>
+<br><br>
 ## features
 - support for jsx, es6, via [babel](https://babeljs.io/)
 - loader for markdown via [remarkable-loader](https://github.com/unindented/remarkable-loader)
@@ -10,6 +11,7 @@ Switchable production/development modes via `$NODE_ENV
 - defaults to development mode (hot-loading); switchable to production mode (minification) via `$NODE_ENV`
 
 <br>
+<br><br><br>
 <br><br>
 ## Optionally share assets locally without npm
 One way you can reuse webpack assets across local projects is by placing them in one common directory and specifing that directory as a [`resolve.fallback`](http://webpack.github.io/docs/configuration.html#resolve-fallback) in your projects' `webpack.config.js`.
