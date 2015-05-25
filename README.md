@@ -33,8 +33,6 @@ $ echo "export WEBPACK_ASSETS=$HOME/webpack/" >> ~/.zshrc
 
 **3** -  Spawn a new shell. To use the boilerplate, just `npm install`. Switch dev environments with `export NODE_ENV=production` and `export NODE_ENV=development`
 
-<br>
-<br>
 
 ### demonstration
 
