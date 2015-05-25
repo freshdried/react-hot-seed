@@ -1,13 +1,15 @@
 # webpack-react-hot-seed
-<p align="center">A basic webpack template with <a href="https://github.com/gaearon/react-hot-loader/">react-hot-loader</a></p>
+Basic React webpack project seed with <a href="https://github.com/gaearon/react-hot-loader/">react-hot-loader</a>
 
-<p align="center">Includes a production mode and a development mode, switchable via environmental variable</p>
+Switchable production/development modes via environmental variable
 
-<p align="center">Uses a <a href="#palette"><b>Palette</b></a> directory: a simple way to reuse assets across projects à la webpack's <a href="http://webpack.github.io/docs/configuration.html#resolve-fallback"> resolve.fallback</a></p>
+Uses a <a href="#palette"><b>Palette</b></a> directory: a simple way to reuse assets across projects à la webpack's <a href="http://webpack.github.io/docs/configuration.html#resolve-fallback"> resolve.fallback</a>
 
+<br>
 ## Additional features
-- loaders for sass, css, html, markdown, json, image files, audio files, font files
 - support for jsx, es6, via [babel](https://babeljs.io/)
+- loader for markdown via [remarkable-loader](https://github.com/unindented/remarkable-loader)
+- loaders for sass, css, html, json, images, audio, fonts
 - production mode (minification) and development mode (hot-loading); switchable via `$NODE_ENV`
 - Don't want to use a palette? Don't export `$PALETTE_DIR` in your shell.
 

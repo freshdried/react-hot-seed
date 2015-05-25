@@ -34,7 +34,7 @@ var config = {
     module: { loaders: [
         { test: /\.scss$/, loaders: ["style", "css", "sass"]},
         { test: /\.css$/, loaders: ["style", "css"]},
-        { test: /\.md$/, loaders:  ["html", "markdown"]},
+        { test: /\.md$/, loaders:  ["html", "remarkable"]},
         { test: /\.html$/, loaders:  ["html"]},
         { test: /\.json$/, loaders: ["json"]},
         { test: /\.jsx?$/, loaders: is_production ? ["babel"] : ["react-hot", "babel"] , exclude: /node_modules/},
@@ -44,7 +44,11 @@ var config = {
         { test: /\.(mp3|wav)$/, loaders: ["file"]}
 
 
-    ]}
+    ]},
+    remarkable: {
+        breaks: true,
+        html: true
+    }
 };
 
 if (is_production) {
