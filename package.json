@@ -1,7 +1,7 @@
 {
   "name": "webpack-react-hot-seed",
-  "version": "1.0.3",
-  "description": "A basic webpack template with react-hot loader",
+  "version": "2.0.0",
+  "description": "React webpack project seed with react-hot-loader",
   "main": "server.js",
   "dependencies": {
     "babel-core": "*",

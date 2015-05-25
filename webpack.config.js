@@ -3,11 +3,11 @@
 var webpack = require("webpack");
 var objectAssign = require("object-assign");
 
-var palette_dir = process.env.PALETTE_DIR;
-if (palette_dir) {
-    console.log("Palette directory recognized at " + palette_dir);
+var asset_dir = process.env.WEBPACK_ASSETS;
+if (asset_dir) {
+    console.log("Common asset directory set to " + asset_dir);
 } else {
-    console.log("Error! Palette directory not found!");
+    console.log("No common asset directory...");
 }
 
 var is_production = process.env.NODE_ENV === "production";
@@ -29,7 +29,7 @@ var config = {
         alias: {
             react: __dirname + "/node_modules/react"
         },
-        fallback: palette_dir
+        fallback: asset_dir 
     },
     module: { loaders: [
         { test: /\.scss$/, loaders: ["style", "css", "sass"]},
