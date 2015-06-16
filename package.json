@@ -1,33 +1,33 @@
 {
-  "name": "webpack-react-hot-seed",
-  "version": "2.0.0",
-  "description": "React webpack project seed with react-hot-loader",
+  "name": "react-hot-seed",
+  "version": "3.0.0",
+  "description": "webpack project seed with react-hot-loader",
   "main": "server.js",
   "dependencies": {
-    "babel-core": "*",
-    "babel-loader": "*",
-    "css-loader": "*",
-    "file-loader": "*",
-    "html-loader": "*",
-    "json-loader": "*",
-    "remarkable-loader": "*",
-    "node-sass": "*",
-    "object-assign": "*",
-    "react": "*",
-    "react-hot-loader": "*",
-    "react-router": "*",
-    "sass-loader": "*",
-    "style-loader": "*",
-    "url-loader": "*",
-    "webpack": "*",
-    "webpack-dev-server": "*"
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "css-loader": "^0.14.5",
+    "file-loader": "^0.8.4",
+    "html-loader": "^0.3.0",
+    "json-loader": "^0.5.2",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.2.0",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.7",
+    "react-router": "^1.0.0-beta1",
+    "remarkable-loader": "^0.1.0",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
   },
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freshdried/webpack-react-hot-seed"
+    "url": "https://github.com/freshdried/react-hot-seed"
   },
   "keywords": [
     "webpack",
@@ -46,7 +46,7 @@
   "author": "Sean Lee <freshdried@gmail.com> (http://sean.lee.mx/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freshdried/webpack-react-hot-seed/issues"
+    "url": "https://github.com/freshdried/react-hot-seed/issues"
   },
-  "homepage": "https://github.com/freshdried/webpack-react-hot-seed"
+  "homepage": "https://github.com/freshdried/react-hot-seed"
 }

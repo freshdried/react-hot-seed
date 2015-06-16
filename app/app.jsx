@@ -1,11 +1,12 @@
-import React from "react"
+import React from "react";
 
-class App extends React.Component {
+const App = React.createClass({
     render() {
-        return <div>
+        return <div id="App">
             <h1>Hello World</h1>
             <div>The DOM is your oyster!</div>
         </div>
     }
-}
-React.render(<App />, document.body);
+});
+
+export default App;
