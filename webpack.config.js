@@ -24,11 +24,9 @@ config.resolve = {
     // },
 }
 
-var cssLoader = "css-loader?module";
-
 config.module = { loaders: [
-    { test: /\.scss$/, loaders: ["style", cssLoader, "sass"]},
-    { test: /\.css$/, loaders: ["style", cssLoader ]},
+    { test: /\.scss$/, loaders: ["style", "css", "sass"]},
+    { test: /\.css$/, loaders: ["style", "css" ]},
     { test: /\.md$/, loaders:  ["html", "remarkable"]},
     { test: /\.html$/, loaders:  ["html"]},
     { test: /\.json$/, loaders: ["json"]},
