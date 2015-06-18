@@ -24,7 +24,7 @@ config.resolve = {
     // },
 }
 
-var cssLoader = isProduction ? "css-loader?module" : "css-loader?module&localIdentName=[path][name]---[local]---[hash:base64:5]"; 
+var cssLoader = "css-loader?module";
 
 config.module = { loaders: [
     { test: /\.scss$/, loaders: ["style", cssLoader, "sass"]},
