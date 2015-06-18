@@ -9,7 +9,7 @@ var config = {};
 config.output = {
     path: __dirname + "/dist/",
     filename: "bundle.js",
-    publicPath: "http://localhost:8080/"
+    publicPath: isProduction ? "http://localhost:8080/" : "http://localhost:8080/"
 }
 
 config.resolve = {
