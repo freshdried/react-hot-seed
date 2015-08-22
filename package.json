@@ -1,6 +1,6 @@
 {
   "name": "react-hot-seed",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "webpack project seed with react-hot-loader",
   "main": "server.js",
   "dependencies": {

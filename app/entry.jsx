@@ -12,5 +12,3 @@ React.render((
         </Route>
     </Router>
 ), document.body);
-
-// React.render(<App/>, document.body);
