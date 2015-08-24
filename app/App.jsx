@@ -6,6 +6,7 @@ const App = React.createClass({
         return (
             <div id="app">
                 <h1>Hello World</h1>
+                {this.props.children}
             </div>
         )
     }
