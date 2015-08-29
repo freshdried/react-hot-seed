@@ -1,6 +1,6 @@
 {
   "name": "react-hot-seed",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "webpack project seed with react-hot-loader",
   "main": "server.js",
   "dependencies": {
@@ -44,7 +44,7 @@
     "template",
     "seed"
   ],
-  "author": "Sean Lee <freshdried@gmail.com> (http://sean.lee.mx/)",
+  "author": "Sean Lee <freshdried@gmail.com> (http://slee.xyz/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sleep/react-hot-seed/issues"
