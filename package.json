@@ -1,7 +1,8 @@
 {
-  "name": "react-hot-seed",
-  "version": "4.0.5",
-  "description": "webpack project seed with react-hot-loader",
+  "name": "react-seed",
+  "private": true,
+  "version": "0.5.5",
+  "description": "react project seed with live-reloading",
   "main": "server.js",
   "dependencies": {
     "babel-core": "^5.8.22",
@@ -12,7 +13,8 @@
     "json-loader": "^0.5.2",
     "node-libs-browser": "^0.5.2",
     "node-sass": "^3.2.0",
-    "react": "^0.13.3",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
     "react-hot-loader": "^1.2.8",
     "react-router": "^1.0.0-beta3",
     "remarkable-loader": "^0.1.0",
@@ -22,13 +24,27 @@
     "webpack": "^1.11.0",
     "webpack-dev-server": "^1.10.1"
   },
+  "devDependencies": {
+    "babel-eslint": "^4.1.1",
+    "babel-plugin-react-transform": "^1.0.3",
+    "eslint": "^1.4.0",
+    "eslint-plugin-react": "^3.3.2",
+    "express": "^4.13.3",
+    "react-transform-catch-errors": "^0.1.1",
+    "react-transform-webpack-hmr": "^0.1.4",
+    "redbox-react": "^1.0.3",
+    "webpack": "^1.12.1",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.0.0"
+  },
   "scripts": {
     "start": "node server.js",
+    "lint": "eslint src",
     "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sleep/react-hot-seed"
+    "url": "https://github.com/sleep/react-seed"
   },
   "keywords": [
     "webpack",
@@ -47,7 +63,7 @@
   "author": "Sean Lee <freshdried@gmail.com> (http://slee.xyz/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sleep/react-hot-seed/issues"
+    "url": "https://github.com/sleep/react-seed/issues"
   },
-  "homepage": "https://github.com/sleep/react-hot-seed"
+  "homepage": "https://github.com/sleep/react-seed"
 }
