@@ -6,8 +6,7 @@
   "main": "server.js",
   "dependencies": {
     "history": "^1.9.0",
-    "react": "^0.14.0-rc1",
-    "react-dom": "^0.14.0-rc1",
+    "react": "^0.13.3",
     "react-router": "^1.0.0-beta4"
   },
   "devDependencies": {
